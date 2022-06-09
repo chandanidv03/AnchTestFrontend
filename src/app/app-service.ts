@@ -8,26 +8,26 @@ export class AppService {
 
   // Get all roles
   getRoles() {
-    return this.http.get(`${environment.baseUrl}/Users/roles`);
+    return this.http.get(`${environment.apiBaseURL}/Users/roles`);
   }
 
   // Get all Jobtitles
   getJobTitles() {
-    return this.http.get(`${environment.baseUrl}/Users/jobtitles`);
+    return this.http.get(`${environment.apiBaseURL}/Users/jobtitles`);
   }
 
   // Get all OrganizationUnits
   getOrganizationUnits() {
-    return this.http.get(`${environment.baseUrl}/Users/organisationunits`);
+    return this.http.get(`${environment.apiBaseURL}/Users/organisationunits`);
   }
 
   // Get all Users
   getAllUsers() {
-    return this.http.get(`${environment.baseUrl}/Users`);
+    return this.http.get(`${environment.apiBaseURL}/Users`);
   }
 
   // Get all users based on filter input
   getFilterData(filterString?: string) {
-    return this.http.get(`${environment.baseUrl}/users/filterUsers?${filterString}`);
+    return this.http.get(`${environment.apiBaseURL}/users/filterUsers?${filterString}`);
   }
 }
