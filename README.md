@@ -21,7 +21,7 @@ The build artifacts will be stored in the `dist/` directory.
 ## About Assignment :-
 
 # How to run Project along with backend :-
-Frontend and backend both should be run on same server. if backend project is not running on the `https://localhost:7098/` then you might have to change `apiBaseURL` in [environment.ts](https://github.com/chandanidv03/AnchTestFrontend/blob/main/src/environments/environment.ts#L7) file
+[Frontend](https://github.com/chandanidv03/AnchTestFrontend) and [Backend](https://github.com/chandanidv03/AnchTestBackend) both should be run on same server. if [backend project](https://github.com/chandanidv03/AnchTestBackend) is not running on the `https://localhost:7098/` then you might have to change `apiBaseURL` in [environment.ts](https://github.com/chandanidv03/AnchTestFrontend/blob/main/src/environments/environment.ts#L7) file
 
 # Learning Source
 - [Angular website]("https://angular.io/")
