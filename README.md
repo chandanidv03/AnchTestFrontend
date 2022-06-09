@@ -25,10 +25,10 @@ The build artifacts will be stored in the `dist/` directory.
 [Frontend](https://github.com/chandanidv03/AnchTestFrontend) and [Backend](https://github.com/chandanidv03/AnchTestBackend) both should be run on same server. if [backend project](https://github.com/chandanidv03/AnchTestBackend) is not running on the `https://localhost:7098/` then you might have to change `apiBaseURL` in [environment.ts](https://github.com/chandanidv03/AnchTestFrontend/blob/main/src/environments/environment.ts#L7) file
 
 # Learning Source
-- [Angular website]("https://angular.io/")
-- [Bootstrap]("https://getbootstrap.com/")
-- [Bootstrap Table component]("https://ng-bootstrap.github.io/#/home")
-- [Udemy]("https://www.udemy.com/")
+- [Angular website](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap Table component](https://ng-bootstrap.github.io/#/home)
+- [Udemy](https://www.udemy.com/)
 
 # What can we improve ?
 - could add client side pagination
