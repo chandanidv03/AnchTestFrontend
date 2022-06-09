@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Contacts</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div>Total User</div>
+      <div>{{totalUser}}</div>
+    </div>
+    <div class="col-md-2">
+      <div>Admin</div>
+      <div>{{totalAdmin}}</div>
+    </div>
+    <div class="col-md-2">
+      <div>Self</div>
+      <div>{{totalSelfUsers}}</div>
+    </div>
+  </div>
+  <app-filters (filterUserData)="onChangeNameFilter($event)"></app-filters>
+  <div class="row">
+    <app-user-table [filterParams]="filterString"></app-user-table>
+  </div>
+</div>

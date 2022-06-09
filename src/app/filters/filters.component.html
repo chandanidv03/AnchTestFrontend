@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <input type="text" [(ngModel)]="queryStringObj.nameOrEmailFilter" class="form-control" placeholder="name or email address" (ngModelChange)="onChangeNameFilter($event)"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+        <select class="form-select dropdown" name="orgUnit" [(ngModel)]="queryStringObj.orgUnit"
+            (change)="onChangeNameFilter($event)" aria-label="Default select example">
+            <option selected value="">Select Organization</option>
+            <option *ngFor="let orgUnit of organizationUnits" [value]="orgUnit">{{orgUnit}}</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select class="form-select dropdown" name="jobTitle" [(ngModel)]="queryStringObj.jobTitle"
+            (change)="onChangeNameFilter($event)" aria-label="Default select example">
+            <option selected value="">Select Job title</option>
+            <option *ngFor="let title of jobTitles" [value]="title">{{title}}</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select class="form-select dropdown" name="role" [(ngModel)]="queryStringObj.role" (change)="onChangeNameFilter($event)"
+            aria-label="Default select example">
+            <option selected value="">Select Role</option>
+            <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+        </select>
+    </div>
+  </div>

@@ -1,0 +1,38 @@
+<table class="table">
+    <thead>
+        <tr class="header">
+            <th scope="col">User</th>
+            <th scope="col" sortable="jobTitle" (sort)="onSort($event)">Job Title</th>
+            <th scope="col" sortable="organisationUnit" (sort)="onSort($event)">Organization</th>
+            <th scope="col" sortable="role" (sort)="onSort($event)">Role</th>
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        <tr *ngFor="let user of users">
+            <td>
+                <div class="shortname-container">
+                    <div class="shortname">{{user.firstName.charAt(0) + user.lastName.charAt(0)}}</div>
+                    <div>{{user.firstName}} {{user.lastName}}
+                        <div>{{user.email}}</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                    <ngb-panel>
+                        <ng-template ngbPanelHeader>
+                            <button ngbPanelToggle class="accordion-button"> {{user.jobTitle}} </button>
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            {{user.jobTitle}} : Enter some HTML
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </td>
+            <td>{{user.organisationUnit}}
+
+            </td>
+            <td>{{user.role}}</td>
+        </tr>
+    </tbody>
+</table>

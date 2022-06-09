@@ -1,0 +1,56 @@
+.shortname-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: 20px;
+  }
+  
+  .shortname {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 38px;
+    margin-top: auto;
+  }
+  
+  .header > th {
+    height: 60px;
+    background-color: #efefef;
+    vertical-align: middle;
+  }
+  
+  .accordion-button,
+  .accordion-button:focus {
+    background: white;
+    color: black;
+    border-color: white;
+    box-shadow: none;
+  }
+  
+  .table-body > tr {
+    background-color: #fcfcfc;
+  }
+  .asc::before {
+    background: url("../../assets/imgs/arrow-up.png") no-repeat;
+    content: "";
+    display: block;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-left: -22px;
+  }
+  
+  .desc::before {
+      background: url("../../assets/imgs/arrow-up.png");
+      content: "";
+      display: block;
+      background-size: 22px;
+      width: 22px;
+      height: 22px;
+      float: left;
+      transform: rotate(180deg);
+      margin-left: -22px;
+    }
+  
